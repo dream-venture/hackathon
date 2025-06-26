@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Dreamventure Hackathon</title>
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Major+Mono+Display&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+</head>
+<body>
+
+    <canvas id="shootingStars"></canvas>
+    <div class="stars-container" id="starsContainer"></div>
+    
+    <section id="landingPage">
+        <nav id="navigation">
+            <li><a href="#applyPage">Apply</a></li>
+            <li><a href="#faqPage">FAQ</a></li>
+            <li><a href="#teamPage">Team</a></li>
+        </nav>
+        <h1 id="hook">Beyond the clouds,<br><b>what dream will you make into a reality?</b></h1>
+        <div class="cloud-container" id="cloudContainer">
+            <img src="images/arrow.png" alt="cursive_arrow" class="arrow" id="arrow">
+        </div>
+    </section>
+    <section id="storylinePage">
+        <div class="storyline-container">
+            <div id="storyline-bg">
+                <h1 id="storyline">You blink, and the world around you shimmers like a fading memory. Whispers of past dreamers echo in the distance—visions of startups, ideas that sparked, ventures that soared.<br><br> You are trapped in the Dream World, a place where creativity knows no bounds, but success isn't guaranteed. The only way to survive? Navigate the unknown, challenge the impossible, and turn your wildest ideas into reality.<br><br> Will you escape—or will you stay and build something <b><i>unforgettable</i></b>?</h1>
+            </div>
+        </div>  
+        <div class="storyline-container2" id="storyline-container2">
+            <div id="storyline-bg2">
+                <h1 id="storyline2">Here at DreamVenture, Hack Club's first business-oriented hackathon, you will design your perfect escape. </h1>
+            </div>
+        </div>  
+    </section>
+   <section id="astronautpage" style="height: 200vh;">
+
+        <img id="astronaut" src="images/astronaut3.png" alt="Astronaut"/>
+
+        <h1 class="core-topics ct1">Coding</h1>
+        <h1 class="core-topics ct2">Engineering</h1>
+        <h1 class="core-topics ct3">Marketing</h1>
+        <h1 class="core-topics ct4">Entrepreneurship</h1>
+      
+   </section>
+
+   <section id="challengePage">
+        <h1 id="challengeTitle">Your Challenge ...</h1>
+        <div class="storyline-container" style="margin-bottom: 30vh;">
+            <div id="storyline-bg">
+                <h1 id="storyline">Build a product to conquer someone else's nightmare. You never know what you might encounter: a geese epidemic, talking staplers, or another mystery waiting to unfold.</h1>
+            </div>
+        </div>  
+        <div class="storyline-container">
+            <div id="storyline-bg">
+                <h1 id="storyline" class="final_storyline">This isn't a competition, but a journey. Once you've built your idea, you'll advertise it to the Dream World — crafting a pitch: weaving a story, and convincing others that your solution is the one that can break the cycle.
+                </h1>
+            </div>
+        </div>  
+   </section>
+    
+
+    <section id="applyPage">
+        <img src="images/logo2.png" alt="Dreamventure logo" id="logo"/>
+        <div class="choice-container" id="choiceContainer">
+            <button class="apply-btn" onclick="window.location.href='#'">WAKE UP & REGISTER NOW</button>
+            <a class="dream-btn" href="#faqPage" style="text-decoration: none; font-family: sans-serif;">... or keep dreaming</a>
+            <div class="countdown" id="countdown"></div>
+        </div>
+    </section>
+
+    <section id="faqPage">
+        <div class="faq-container">
+            <h1 class="section-title">FAQ & Eligibility</h1>
+            
+            <div class="faq-box regular-box">
+                <button class="question">
+                    <span class="question-text">Who can join DreamVenture?</span>
+                    <span class="dropdown-icon">+</span>
+                </button>
+                <div class="answer">Any high school student can apply, no matter your experience or where you're from. If you're excited to learn and build something, you're welcome here.</div>
+            </div>
+
+            <div class="faq-box regular-box">
+                <button class="question">
+                    <span class="question-text">Is this event free?</span>
+                    <span class="dropdown-icon">+</span>
+                </button>
+                <div class="answer">Yes! The hackathon is completely free to attend. We will also provide meals, snacks, swag, and more.</div>
+            </div>
+
+            <div class="faq-box regular-box">
+                <button class="question">
+                    <span class="question-text">Are travel costs covered?</span>
+                    <span class="dropdown-icon">+</span>
+                </button>
+                <div class="answer">We offer travel grants to help you get here, whether it’s flying or driving. Just mention it in your application and we’ll reach out with more info.</div>
+            </div>
+
+            <div class="faq-box regular-box">
+                <button class="question">
+                    <span class="question-text">I am new to business or coding, can I still join?</span>
+                    <span class="dropdown-icon">+</span>
+                </button>
+                <div class="answer">Of course! You don’t need any experience. We'll have workshops, mentors, and teammates who are happy to help you learn along the way.</div>
+            </div>
+
+            <div class="faq-box regular-box">
+                <button class="question">
+                    <span class="question-text">Do I need a team?</span>
+                    <span class="dropdown-icon">+</span>
+                </button>
+                <div class="answer">Nope! You can come solo or with friends. If you don’t have a team, we’ll help you find one at the event.</div>
+            </div>
+
+            <div class="faq-box regular-box">
+                <button class="question">
+                    <span class="question-text">What should I bring?</span>
+                    <span class="dropdown-icon">+</span>
+                </button>
+                <div class="answer">Bring your laptop, charger, and anything else you need to feel comfortable for the weekend (like clothes, toiletries, and a sleeping bag). We’ll send a full checklist before the event.</div>
+            </div>
+
+            <div class="faq-box regular-box">
+                <button class="question">
+                    <span class="question-text">My parents are worried. What should I do?</span>
+                    <span class="dropdown-icon">+</span>
+                </button>
+                <div class="answer">That’s totally normal! DreamVenture will have 24/7 adult supervision from background-checked staff and mentors. Only participants and approved team members will be allowed inside the venue, so you'll be in a safe and secure space the whole time.</div>
+            </div>
+
+            <div class="faq-box regular-box">
+                <button class="question">
+                    <span class="question-text">Who's running this?</span>
+                    <span class="dropdown-icon">+</span>
+                </button>
+                <div class="answer">The hackathon is organized by high school students and supported by <a href="https://hackclub.com/" target="_blank" style="color:#4a90e2"><b>Hack Club</b></a>, a nonprofit that helps students build things with tech and entrepreneurship.</div>
+            </div>
+
+            <div class="faq-box regular-box">
+                <button class="question">
+                    <span class="question-text">I still have questions — how can I reach out?</span>
+                    <span class="dropdown-icon">+</span>
+                </button>
+                <div class="answer">Email us at <b><a href="mailto:team.dreamventure@gmail.com" style="color:white">team.dreamventure@gmail.com</a></b>!</div>
+            </div>
+
+            <div class="faq-box venue-box">
+                <div class="venue-info">
+                    <div class="question">Location & Venue</div>
+                    <div class="answer">
+                        Join us at:<br>
+                        Harvard Innovation Labs<br>
+                        125 Western Ave<br>
+                        Boston, MA 02134<br><br>
+                        Experience DreamVenture in the heart of innovation!
+                    </div>
+                </div>
+            
+                <div class="venue-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.439750056791!2d-71.12568812346147!3d42.36340657131553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377604a1cd39d%3A0x659d69f0f417b3a8!2sHarvard%20Innovation%20Labs!5e0!3m2!1sen!2sus!4v1709829937044!5m2!1sen!2sus"
+                        allowfullscreen="" 
+                        loading="eager" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section id="teamPage">
+        <h1 class="section-title">Meet the Dreamers</h1>
+        
+        <div class="team-container-wrapper">
+            <div class="team-container member1">
+                <img src="images/blank.png" alt="Team Member 1" class="team-member-img">
+                <h1 class="team-member-name">[name here]</h1>
+            </div>
+            <div class="team-container member2" >
+                <img src="images/blank.png" alt="Team Member 2" class="team-member-img">
+                <h1 class="team-member-name">[name here]</h1>
+            </div>
+            <div class="team-container member3" >
+                <img src="images/blank.png" alt="Team Member 3" class="team-member-img">
+                <h1 class="team-member-name">[name here]</h1>
+        </div>
+            <div class="team-container member4">
+                <img src="images/blank.png" alt="Team Member 4" class="team-member-img">
+                <h1 class="team-member-name">[name here]</h1>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <section id="sponsorPage">
+       
+        <h1 class="section-title">Our Sponsors</h1>
+
+        <div class="premier-container">
+            <h1 class="sponsor-level premier-title">Premier</h1>
+            <img class="premier-img" src="https://placehold.co/600x400/78b7ff/white?text=Premier" alt="Premier Logo">
+        </div>
+        <div class="gold-container">
+            <h1 class="sponsor-level gold-title">Gold</h1>
+            <div class="logo-container">
+                <img class="gold-img" src="https://placehold.co/600x400/d3af37/white?text=Gold" alt="Gold Logo"></img>
+                <img class="gold-img" src="https://placehold.co/600x400/d3af37/white?text=Gold" alt="Gold Logo"></img>
+                <img class="gold-img" src="https://placehold.co/600x400/d3af37/white?text=Gold" alt="Gold Logo"></img>
+            </div>
+        </div>
+        <div class="silver-container">
+            <h1 class="sponsor-level silver-title">Silver</h1>
+            <div class="logo-container">
+                <img class="silver-img" src="https://placehold.co/600x400/bcc6cc/white?text=Silver" alt="Silver Logo"></img>
+                <img class="silver-img" src="https://placehold.co/600x400/bcc6cc/white?text=Silver" alt="Silver Logo"></img>
+                <img class="silver-img" src="https://placehold.co/600x400/bcc6cc/white?text=Silver" alt="Silver Logo"></img>
+                <img class="silver-img" src="https://placehold.co/600x400/bcc6cc/white?text=Silver" alt="Silver Logo"></img>                
+            </div>
+        </div>
+        
+            
+        
+    </section>
+
+
+    <script src="countdown.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const arrow = document.getElementById('arrow');
+            const hook = document.getElementById('hook');
+            setTimeout(() => {
+                arrow.classList.add('visible');
+                setTimeout(() => {hook.classList.add('visible')},500)
+            },2000);
+
+
+            //type storylien
+            const storyline = document.getElementById('storyline');
+            const storyline_text = storyline.innerHTML;
+            storyline.innerHTML = '';
+        
+            new TypeIt("#storyline", {
+                strings: storyline_text,
+                speed: 35,
+                waitUntilVisible: true, // waits until scrolled into view
+                lifeLike: false,
+            }).go();
+
+
+            const final_storyline = document.getElementsByClassName('final_storyline')[0];
+            const final_storyline_text = final_storyline.innerHTML;
+            final_storyline.innerHTML = '';
+
+            new TypeIt(".final_storyline", {
+                strings: final_storyline_text,
+                speed: 35,
+                waitUntilVisible: true,
+                lifeLike: false,
+            }).go();
+
+            const applyPage = document.getElementById('applyPage');
+            const choiceContainer = document.getElementById('choiceContainer');
+
+            // Background darkening effect
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+                const viewportHeight = window.innerHeight;
+                
+                // Start darkening after page 1
+                if (scrollPosition > viewportHeight) {
+                    const totalScrollDistance = document.documentElement.scrollHeight - (viewportHeight * 2);
+                    const currentScroll = scrollPosition - viewportHeight;
+                    const darkness = Math.min(1, currentScroll / totalScrollDistance);
+                    
+                    const r = Math.round(4 * (1 - darkness));
+                    const g = Math.round(31 * (1 - darkness));
+                    const b = Math.round(78 * (1 - darkness));
+                    
+                    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+                } else {
+                    document.body.style.backgroundColor = '#041f4e';
+                }
+
+                // Check if we've scrolled to middle of page 3
+                const applyPageRect = applyPage.getBoundingClientRect();
+                const halfPageVisible = applyPageRect.top <= viewportHeight / 2;
+                
+                if (halfPageVisible) {
+                    triggerApplyOptions();
+                }
+
+                // Add this new code for second storyline visibility
+                const storylineContainer2 = document.getElementById('storyline-container2');
+                if (storylineContainer2) {
+                    const rect = storylineContainer2.getBoundingClientRect();
+                    const triggerPoint = window.innerHeight * 0.75; // Trigger when container is 75% in view
+                    
+                    if (rect.top <= triggerPoint) {
+                        storylineContainer2.classList.add('visible');
+                    }
+                }
+            });
+
+            function triggerApplyOptions() {
+                    choiceContainer.classList.add('visible');
+                document.getElementById('countdown').classList.add('visible');
+                    startCountdown();
+            }
+
+            function startCountdown() {
+                const countdownElement = document.getElementById('countdown');
+                const targetDate = new Date('2025-08-22T07:00:00').getTime();
+
+                function updateCountdown() {
+                    const now = new Date().getTime();
+                    const timeLeft = targetDate - now;
+
+                    if (timeLeft <= 0) {
+                        countdownElement.textContent = "Event has started!";
+                                return;
+                    }
+
+                    // Calculate days, hours, minutes, seconds
+                    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                    // Display the countdown
+                    countdownElement.textContent = 
+                        `${days}d ${hours.toString().padStart(2, '0')}h ${minutes.toString().padStart(2, '0')}m ${seconds.toString().padStart(2, '0')}s`;
+                }
+
+                // Update immediately and then every second
+                updateCountdown();
+                const countdownInterval = setInterval(updateCountdown, 1000);
+
+           
+                window.countdownInterval = countdownInterval;
+            }
+
+            // Remove any existing countdown interval when the page loads
+            if (window.countdownInterval) {
+                clearInterval(window.countdownInterval);
+            }
+          
+
+        });
+
+
+
+
+        //astronaut rotation thingy
+        window.onscroll = function () {
+            AstronautRotate();
+        };
+
+        function AstronautRotate() {
+            let scrollYvh = (window.scrollY / window.innerHeight) * 100;
+            let image = document.getElementById("astronaut");
+            console.log(window.pageYOffset,window.screenY,window.scrollY,scrollYvh);
+            if (scrollYvh > 275 && (scrollYvh-275)/3 < 100 ) {
+                image.style.transform = 'translateX(' + (scrollYvh-275)/3 + 'vw) translateY(' + (scrollYvh-275) + 'vh) rotate(' + (scrollYvh-275) + 'deg)';
+     
+            }
+        }
+
+        //core topics fade in
+
+        const texts = document.querySelectorAll('.core-topics');
+        
+        function onScroll() {
+            const vh = window.innerHeight;
+            const fadeStart = vh * 0.75; // 75vh
+            const fadeEnd = vh * 0.5;    // 50vh
+
+            texts.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+
+                // Map top position to opacity
+                let opacity = (fadeStart - top) / (fadeStart - fadeEnd);
+                // Clamp between 0 and 1
+                opacity = Math.max(0, Math.min(1, opacity));
+
+                el.style.opacity = opacity;
+            });
+        }
+
+
+        window.addEventListener('scroll', onScroll);
+        onScroll(); // in case some are already in view on load
+        
+
+        // wake up background color change animation
+
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0; //is it phone / tablet (no mouse)
+
+
+        const apply_button = document.getElementsByClassName('apply-btn')[0];
+        const dream_button = document.getElementsByClassName('dream-btn')[0];
+        
+        const astronaut = document.getElementById('astronaut');
+        const stars = document.getElementsByClassName('stars-container')[0];
+
+        const astronautTransformations = window.getComputedStyle(astronaut).transform;
+        
+        let originalBg;
+
+
+        if (!isTouchDevice){
+            apply_button.addEventListener("mouseenter", () => {
+                // Capture current background color just before hover effect
+                hoverTimeout = setTimeout(() => {
+                    originalBg = window.getComputedStyle(document.body).backgroundColor;
+                    document.body.style.backgroundColor = "#3492eb"; // New background
+                    astronaut.src = "images/sun.png";
+                    astronaut.style.transform = astronautTransformations+ ' scale(2)'; // fix scale thing (not working)
+                    stars.style.display = "none";
+                    dream_button.style.borderColor = "#d8e3f0";
+                    dream_button.style.color = "#d8e3f0";
+                    
+
+                    //add if want custom bg
+                    //Object.assign(applyPage.style, {backgroundImage: "url('images/morningbg.png')",backgroundRepeat: "no-repeat",backgroundSize: "cover",backgroundPosition: "center",width: "100vw",height: "100vh"});
+
+
+                    }, 600); // 1 second delay
+                
+                    
+            });
+
+            apply_button.addEventListener("mouseleave", () => {
+                clearTimeout(hoverTimeout);
+                astronaut.src = "images/astronaut2.png";
+                astronaut.style.width = '100px';
+                astronaut.style.height = '100px';
+                stars.style.display = "block"
+                dream_button.style.borderColor = "#4a90e2";
+                dream_button.style.color = "#4a90e2";
+                
+                hoverTimeout = null;
+                if (originalBg) {
+                    document.body.style.backgroundColor = originalBg; // Restore original
+                }
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {
+            const target = document.getElementById('challengeTitle');
+
+            function challengeScroll() {
+                const rect = target.getBoundingClientRect();
+                const vh = window.innerHeight;
+
+                const start = vh * 0.75;
+                const end = vh * 0.5;
+
+                let progress = (start - rect.top) / (start - end);
+                progress = Math.max(0, Math.min(1, progress)); // Clamp 0–1
+
+                target.style.opacity = progress;
+            }
+
+            window.addEventListener('scroll', challengeScroll);
+            challengeScroll(); // Call once in case it's already in view
+        });
+
+
+    
+    </script>
+    <script src="stars.js"></script>
+    <script src="dropdown.js"></script>
+
+
+</body>
+</html>
