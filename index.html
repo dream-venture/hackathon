@@ -40,7 +40,7 @@
     <section id="storylinePage">
         <div class="storyline-container">
             <div id="storyline-bg">
-                <h1 id="storyline">You blink, and the world around you shimmers like a fading memory. Whispers of past dreamers echo in the distance—visions of startups, ideas that sparked, ventures that soared.<br><br> You are trapped in the Dream World, a place where creativity knows no bounds, but success isn't guaranteed. The only way to survive? Navigate the unknown, challenge the impossible, and turn your wildest ideas into reality.<br><br> Will you escape or will you stay and build something <b><i>unforgettable</i></b>?</h1>
+                <h1 id="storyline">You blink, and the world around you shimmers like a fading memory. Whispers of past dreamers echo in the distance—visions of startups, ideas that sparked, ventures that soared.<br><br> You are trapped in the Dream World, a place where creativity knows no bounds, but success isn't guaranteed. The only way to survive? Navigate the unknown, challenge the impossible, and turn your wildest ideas into reality.<br><br> Will you escape—or will you stay and build something <b><i>unforgettable</i></b>?</h1>
             </div>
         </div>  
         <div class="storyline-container2" id="storyline-container2">
@@ -74,13 +74,12 @@
             </div>
         </div>  
    </section>
-    We 
+    
 
     <section id="applyPage">
         <img src="images/logo2.png" alt="Dreamventure logo" id="logo"/>
         <div class="choice-container" id="choiceContainer">
-        <a href="https://form.typeform.com/to/PFxXPZ8x" target="_blank" class="apply-btn" style="display: inline-block; text-align: center; text-decoration: none;">
-  WAKE UP & REGISTER NOW</a>
+            <button class="apply-btn" onclick="window.location.href='#'">WAKE UP & REGISTER NOW</button>
             <a class="dream-btn" href="#faqPage" style="text-decoration: none; font-family: sans-serif;">... or keep dreaming</a>
             <div class="countdown" id="countdown"></div>
         </div>
@@ -377,7 +376,7 @@
         function AstronautRotate() {
             let scrollYvh = (window.scrollY / window.innerHeight) * 100;
             let image = document.getElementById("astronaut");
-            console.log(window.pageYOffset,window.screenY,window.scrollY,scrollYvh);
+           // console.log(window.pageYOffset,window.screenY,window.scrollY,scrollYvh);
             if (scrollYvh > 275 && (scrollYvh-275)/3 < 100 ) {
                 image.style.transform = 'translateX(' + (scrollYvh-275)/3 + 'vw) translateY(' + (scrollYvh-275) + 'vh) rotate(' + (scrollYvh-275) + 'deg)';
      
